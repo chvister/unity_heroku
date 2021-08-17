@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "prestart": "npm install",
+    "prestart": "npm install && npm run build",
     "build": "tsc -p tsconfig.json",
     "test": "jest --env=node --colors --coverage test",
     "newman": "newman run test/renderstreaming.postman_collection.json",
