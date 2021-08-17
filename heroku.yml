@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: run.bat
+  web: exec run.bat
