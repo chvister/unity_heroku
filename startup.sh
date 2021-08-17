@@ -1,2 +1,3 @@
-npm run build
-npm run start -w
+npm run start -- -w
+heroku container:push web
+heroku container:release web
