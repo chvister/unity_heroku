@@ -1,6 +1,2 @@
-@echo off
-pushd %~dp0
-call npm run build
-call npm run start -- -w
-popd
-pause
+npm run build
+npm run start -w
