@@ -6,7 +6,7 @@
     "tsc": "tsc",
     "postinstall": "npm run tsc",
     "prestart": "npm install && npm run build",
-    "build": "tsc -p tsconfig.json",
+    "build": "npm install --only=dev && tsc -p tsconfig.json",
     "test": "jest --env=node --colors --coverage test",
     "newman": "newman run test/renderstreaming.postman_collection.json",
     "start": "node ./build/index.js -w",
