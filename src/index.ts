@@ -8,6 +8,7 @@ import { AddressInfo } from 'net';
 import WSSignaling from './websocket';
 import Options from './class/options';
 
+
 export class RenderStreaming {
   public static run(argv: string[]): RenderStreaming {
     const program = require('commander');
